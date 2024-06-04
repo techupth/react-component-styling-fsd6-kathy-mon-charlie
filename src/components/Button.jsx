@@ -17,7 +17,6 @@ function Button(props) {
         height: 50px;
         border-radius: 4px;
         padding: 0px, 16px, 0px, 16px;
-
         font-weight: 400;
         font-size: 16px;
         line-height: 18px;

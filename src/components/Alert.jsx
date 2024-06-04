@@ -29,27 +29,21 @@ function Alert(props) {
         box-sizing: border-box;
         background-color: ${textDict[props.text]?.color ??
         textDict.error.color};
-        padding: 26px, 20px, 26px, 20px;
+        padding: 26px 20px;
         gap: 15px;
-        item-alignment: center;
+        justify-content: start;
+        align-items: center;
         margin-top: 30px;
       `}
     >
-      <div
+      <img
+        src={textDict[props.text]?.src ?? textDict.error.src}
+        alt={`${props.text} icon`}
         css={css`
-          margin-top: 26px;
-          margin-left: 20px;
+          width: 24px;
+          height: 24px;
         `}
-      >
-        <img
-          src={textDict[props.text]?.src ?? textDict.error.src}
-          alt={`${props.text} icon`}
-          css={css`
-            width: 24px;
-            height: 24px;
-          `}
-        />
-      </div>
+      />
 
       <h3
         css={css`
